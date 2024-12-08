@@ -1,0 +1,15 @@
+langchain
+langchain_community
+langchain-openai
+langchain-google-community
+python-dotenv 
+google-auth 
+google-auth-oauthlib 
+google-auth-httplib2 
+google-api-python-client 
+flask 
+streamlit
+PyPDF2
+openai
+chromadb
+tiktoken
