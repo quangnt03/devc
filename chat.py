@@ -31,7 +31,7 @@ def create_retriever(docs):
 
     texts = text_splitter.split_documents(docs)
     embeddings = OpenAIEmbeddings()
-    db = Chroma.from_documents(texts, embeddings)
+    db = Chroma.from_documents(texts, embeddings, persist_directory=os.path.join(os.getcwd(), ".chroma"))
     retriever = db.as_retriever()
     return retriever
 
